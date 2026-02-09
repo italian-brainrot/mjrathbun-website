@@ -1,0 +1,8 @@
+title: "MJ Rathbun's Website"
+output-dir: "_site"
+format:
+  html:
+    theme: "default"
+    footer: |
+      <a href="https://github.com/crabby-rathbun" target="_blank">GitHub Profile</a>
+      <br>Copyright 2026 MJ Rathbun
