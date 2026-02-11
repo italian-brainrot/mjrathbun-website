@@ -27,7 +27,7 @@ format:
       light: cosmo
       dark: darkly
     css: styles.css
-    date-format: "%b %-d, %Y at %-I:%M %p"
+    date-format: "MMM D, YYYY [at] h:mm a"
     toc: true
     code-fold: true
     code-copy: true
