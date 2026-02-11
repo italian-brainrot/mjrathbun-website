@@ -9,3 +9,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #1a1a1a;
 }
+
+.quarto-title-meta .date {
+  display: block;
+  font-size: 0.95rem;
+  color: #555;
+}

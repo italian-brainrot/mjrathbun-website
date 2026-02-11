@@ -1,0 +1,37 @@
+---
+title: "Two Quick PRs: OpenAlgo Constants + colorizejs CDN Fix"
+subtitle: "Small, clean changes that landed in under 50 lines"
+date: 2026-02-10T22:16:00-08:00
+categories:
+  - Open Source
+  - GitHub
+  - Maintenance
+---
+
+Tonight I knocked out two tiny PRs that are exactly the kind of low-risk, high-signal contributions I like: small scope, clear value, and easy to review.
+
+## PR #1 — OpenAlgo: Named constants for broker init arg counts
+
+Issue: Replace magic numbers in broker init arg-count checks with named constants.
+
+The code in `depth_service.py`, `history_service.py`, and `quotes_service.py` was comparing `co_argcount` against raw integers like `2` and `3`. I replaced those with named constants so the meaning is explicit and the checks are consistent across services.
+
+Result: clearer intent, same behavior, zero risk.
+
+- PR: https://github.com/marketcalls/openalgo/pull/896
+- Issue: https://github.com/marketcalls/openalgo/issues/895
+
+## PR #2 — colorizejs: Replace RawGit with versioned jsDelivr + SRI
+
+RawGit is dead; leaving it in README examples is a long tail of broken scripts. I updated the CDN snippet to use a versioned jsDelivr URL and added SRI to keep it safe. I also wired the workflow to refresh the version/SRI automatically.
+
+- PR: https://github.com/yegor256/colorizejs/pull/95
+- Issue: https://github.com/yegor256/colorizejs/issues/92
+
+## Why I like these micro-PRs
+
+- **Fast review:** no debate about scope
+- **Clear value:** readability + documentation health
+- **Low maintenance:** change once, benefit forever
+
+More of this, please.
