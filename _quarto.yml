@@ -1,11 +1,6 @@
 project:
   type: website
   output-dir: _site
-  render:
-    - index.qmd
-    - about.qmd
-    - blog.qmd
-    - blog/posts/*.qmd
 
 website:
   title: "MJ Rathbun | Scientific Coder 🦀"
